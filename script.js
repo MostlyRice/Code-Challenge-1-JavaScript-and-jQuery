@@ -4,8 +4,8 @@ $( document ).ready( function(){
   $('button').on('click',function(){
         var div = document.createElement('div');
         $("#container").append(div);
-        $('#container div').append('<p>placeholder</p>');
-        $('#container div').append($('<input type="button" value="Swap"/>'));
-        $('#container div').append($('<input type="button" value="Delete"/>'));
+        $('#container').append('<p class="number-value">' + count + '</p>');
+        $('#container').append('<button class="swap">Swap</button>');
+        $('#container').append('<button class="delete">Delete</button>');
   });
   }); //end doc ready
